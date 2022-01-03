@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+/* For Nav Bar */
+nav {
+  font-family: "Cairo", sans-serif;
+  font-family: "Jomhuria", cursive;
+  font-family: "Lobster", cursive;
+  font-family: "Merriweather", serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 1px;
+}
+.navbar-brand span {
+  background-color: #ff9900;
+  color: black;
+  font-size: 35px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+nav ul li a:hover {
+  background-color: #ff9900;
+  font-weight: bold;
+  color: white !important;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  opacity: 1 !important;
+}
+
+/* About the project  */
+.lead {
+  font-size: 90px;
+  width: fit-content;
+}
+
+/* Test Suites and Test Cases seciotn */
+.haeding {
+  text-align: center;
+  margin: 50px;
+  position: relative;
+  z-index: -1;
+}
+
+.haeding::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background-color: #ff9900;
+    left: 30%;
+    top: 100%;
+    right: 0;
+    bottom: 0;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% {
+        left: 30%;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+    }
+    25% {
+        left: 50%;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+    }
+    50% {
+        left: 70%;
+        top: 100%;
+        right: 0;
+        bottom: 0;
+    }
+
+    
+}
+
+.table-container {
+  margin: 40px auto 0;
+  padding: 0 2%;
+}
+.table {
+  padding: 0 10%;
+  font-size: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table thead {
+  background-color: #cc9964;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+
+.table thead tr th {
+  padding: 10px;
+  border: 1px solid black;
+  vertical-align: top;
+}
+
+.table tbody tr th {
+  background-color: #212529;
+  color: white;
+  font-weight: lighter;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e685;
+  vertical-align: middle;
+}
+
+.passButton {
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  border:none;
+  width: 80px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.testCaseStepsCell {
+  width: 300px;
+}
+
+/* Responsive Table */
+@media (max-width:1314px) {
+    .table thead {
+        display: none;
+    }
+    .table, .table tbody,.table tr,.table th {
+        display: block;
+        width: 100%;
+    }
+    .table tr {
+        margin-bottom: 15px;
+    }
+    .table tbody tr th {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table th::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+    table ul li {
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+}
+
+nav {
+  box-shadow: 2px 3px 20px #cc9964;
+}
+

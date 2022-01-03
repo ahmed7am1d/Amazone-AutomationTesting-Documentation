@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Amazone Testing Documentation</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CSS-FOLDER/master.css" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Lobster&family=Merriweather:ital@1&family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3">
+      <!-- the purpose of the container is to set something like margin and to put all of our links in one div -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a href="#" class="navbar-brand">
+          <img src="Images/covid-test.png" width="40px" height="40px" />
+          <span>A</span>mazone Testing Doc
+        </a>
+
+        <!-- Humberger button that is linked to our navigation links using id -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <!-- Inside button we will add the = button -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <!-- When screen is small collapse all the navigation into burger -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- ms-auto to move ul to the right of page -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#aboutMe" class="nav-link">About The Project</a>
+            </li>
+            <li class="nav-item">
+              <a href="#question" class="nav-link">Test Suites</a>
+            </li>
+            <li class="nav-item">
+              <a href="#myworks" class="nav-link">Author</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content  and Sections-->
+    <!-- Section Type Write Effect -->
+
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-2 text-center text-sm-start"
+    >
+      <!-- we need everything in container and in the middle as navbar -->
+      <div class="container">
+        <!-- Flex box(inside two childs image and text) 
+               d-sm-flex it becomes flex only and if screen is bigger than small-->
+        <div class="d-sm-flex justify-content-between">
+          <div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <p class="lead" id="lead" my-4></p>
+          </div>
+          <!-- class="img-fluid" => for making image responsive or same size as container -->
+          <img
+            class="niceimg img-fluid w-50 d-none d-sm-block"
+            src="Images/hello-i-m-nik-r22qS5ejODs-unsplash-removebg.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="table-container">
+      <h1 class="haeding">Test Suites and Test Cases:</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Test Suit ID</th>
+            <th>Test Suit Description</th>
+            <th>Test Case ID</th>
+            <th>Test Case Description</th>
+            <th>Test Case Steps</th>
+            <th>Preconditions</th>
+            <th>Input Data</th>
+            <th>Postconditions</th>
+            <th>Expected Results</th>
+            <th>Real Results</th>
+            <th>Test Status</th>
+            <th>Author</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- First Raw - TS-001 -->
+          <tr>
+            <th rowspan="3" data-label="Test Suit ID">TS-A-001</th>
+            <th rowspan="3" data-label="Test Suit Description">
+              Testing and Verifying the SignIn Page of Amazone
+            </th>
+            <th data-label="Test Case ID">TC-A-SignIn-001</th>
+            <th data-label="Test Case Description">
+              Sign in to Amazone with Vaild User info
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Click on Sign in Button</li>
+                <li>Enter Vaild Email Address</li>
+                <li>Clikc on Contineu</li>
+                <li>Enter Vaild Password</li>
+                <li>Clikc on Contineu</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>Input Data</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 5040302010HammodY</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>Succesful login</li>
+                <li>HomePage loaded with Amazone's Current Offers</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>HomePage loaded with Amazone's Current Offers</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- Second Raw TS-001 -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignIn-002</th>
+            <th data-label="Test Case Description">
+              Sign in to Amazone with InVaild Email Address
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Click on Sign in Button</li>
+                <li>Enter InVaild Email Address</li>
+                <li>Clikc on Contineu</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>Wrong Input Data</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: dasdasagqwega</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>Forward to Enter Password</li>
+                <li>UnSuccesful login</li>
+                <li>Alert say's wrong Email address or pop out</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>Alert (PopOut) says Wrong Email address or phone Number</li>
+                <li>Unable to Enter Password</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- Third Raw TS-001-->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignIn-003</th>
+            <th data-label="Test Case Description">
+              Sign in to Amazone with Vaild Email Address and InVaild Password
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Click on Sign in Button</li>
+                <li>Enter Vaild Email Address</li>
+                <li>Clikc on Contineu</li>
+                <li>Enter InVaild Password</li>
+                <li>Clikc on Contineu</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>Wrong Input Data</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: asdfgasdfasd</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>UnSuccesful login</li>
+                <li>Alert say's wrong Password or pop out</li>
+                <li>Ability to change forggeten Password</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>Alert (PopOut) says Wrong Password</li>
+                <li>Asking if user did forget his password</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- Fourth Raw TS-002 - Responsivity-->
+          <tr>
+            <th data-label="Test Suit ID">TS-A-002</th>
+            <th  data-label="Test Suit Description">
+              Testing and Verifying the Responsivity of The Amazone Website on Various Sizes and Platforms
+            </th>
+            <th data-label="Test Case ID">TC-A-Responsivity-001</th>
+            <th data-label="Test Case Description">
+              Changing the windows Sizes to verify that Amazone is Responsive on Windows Different Width Sizes
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Set the windows size to (1400*975)</li>
+                <li>Set the windows size to (1100*975)</li>
+                <li>Set the windows size to (800*975)</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The Website is Responsive at all Screen Sizes on Computers</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>Website is responsive on all windows sizes<strong>but not responsive on less than 1000px Width</strong> </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- Fifth Raw - TS-003 - Checking Currency Exchange is working -->
+          <tr>
+            <th data-label="Test Suit ID">TS-A-003</th>
+            <th  data-label="Test Suit Description">
+              Testing and Verifying that Changing currency is working on Amazone Website before loging in
+            </th>
+            <th data-label="Test Case ID">TC-A-Currency-001</th>
+            <th data-label="Test Case Description">
+              Changing the Currency of Amazone E-shop without logging in and search for item and make sure currency is changed
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Change the Currency Settings to EURO</li>
+                <li>Save the settings</li>
+                <li>Search for an item</li>
+                <li>Make Sure item is displayed with the required currency(EURO)</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>EURO Currency</li>
+                <li>Search for: dslr cameras</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+                <li>Currency displayed in EURO</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The admired Currency (EURO) is displayed and all items are shown with it</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>Items and Offers are shown with the choosen Currency </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- Sixth Raw - TS-004 - Checking the functionally of adding items to basket - Guest User -->
+          <tr>
+            <th rowspan="3" data-label="Test Suit ID">TS-A-004</th>
+            <th rowspan="3" data-label="Test Suit Description">
+              Testing and Verifying that basket or the cart functionally is working in guest and user mode
+            </th>
+            <th data-label="Test Case ID">TC-A-Basket-001</th>
+            <th data-label="Test Case Description">
+              adding items to basket without Signing in
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Specific Item</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Enter specific Amazone Product</li>
+                <li>add the offer to basket</li>
+                <li>Check that basket is not Empty by the visiblity of proceed to checkout button</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: None</li>
+                <li>Password: None</li>
+                <li>Search for: PS4 Gift Card</li>
+              
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>item is added to basket</li>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>Guest is able to add any items to their temprory basket</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>Item is successfully added to the basket by a guest user </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- Seventh Raw - TS-004 - Checking the functionally of Deleting items to basket - Verified User  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-Basket-002</th>
+            <th data-label="Test Case Description">
+              adding items to basket with a Verfied User Should be working fine
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign In with a Vaild Email and Password</li>
+                <li>Add PS4 gift card to basket </li>
+                <li>Check that basket is not Empty by the visiblity of proceed to checkout button</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 5040302010HammodY</li>
+                <li>Search for: PS4 Gift Card</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>item is added to basket</li>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>Verified User is able to add any items to their basket</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>Item is successfully added to the basket by a Verified User </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- Eighth Raw - TS-004 - Checking the functionally of Removing items From  basket - Guest Mode -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-Basket-003</th>
+            <th data-label="Test Case Description">
+              testing that Removing item from a guest user basket in a current session is working
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Naviage to A ps4 gift card item</li>
+                <li>add the offer to basket</li>
+                <li>Remove the item from the basket</li>
+                <li>Check that basket is Empty affter adding and removing an item by checking proceed to checkout button</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: None</li>
+                <li>Password: None</li>
+                <li>Search for: PS4 gift Card</li>
+                
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>item is removed from the basket in current session</li>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>a guest user can remove an item from his basket in his current session</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>Item is successfully removed from the basket by a guest User </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+
+
+
+
+          
+        </tbody>
+      </table>
+    </section>
+    <!-- Footer -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
