@@ -49,13 +49,13 @@
           <!-- ms-auto to move ul to the right of page -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="#aboutMe" class="nav-link">About The Project</a>
+              <a href="#aboutTheProject" class="nav-link">About The Project</a>
             </li>
             <li class="nav-item">
-              <a href="#question" class="nav-link">Test Suites</a>
+              <a href="#testSuites" class="nav-link">Test Suites</a>
             </li>
             <li class="nav-item">
-              <a href="#myworks" class="nav-link">Author</a>
+              <a href="#footer" class="nav-link">Author</a>
             </li>
           </ul>
         </div>
@@ -90,8 +90,11 @@
       </div>
     </section>
 
-    <section class="table-container">
-      <h1 class="haeding">Test Suites and Test Cases:</h1>
+    <section class="table-container" id="aboutTheProject">
+      <div class="haeding">
+        <img src="Images/settings.png" class="imageSettings" style="display: inline-block; margin-bottom: 1.3%;" width="40px" height="40px">
+      <h1 style="display:inline-block;" cl>Test Suites and Test Cases:</h1>
+    </div>
       <table class="table">
         <thead>
           <tr>
@@ -111,7 +114,7 @@
         </thead>
 
         <tbody>
-          <!-- First Raw - TS-001 -->
+          <!-- 1 Raw - TS-001 -->
           <tr>
             <th rowspan="3" data-label="Test Suit ID">TS-A-001</th>
             <th rowspan="3" data-label="Test Suit Description">
@@ -167,7 +170,7 @@
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
-          <!-- Second Raw TS-001 -->
+          <!-- 2 Raw TS-001 -->
           <tr>
             <th data-label="Test Case ID">TC-A-SignIn-002</th>
             <th data-label="Test Case Description">
@@ -218,7 +221,7 @@
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
-          <!-- Third Raw TS-001-->
+          <!-- 3 Raw TS-001-->
           <tr>
             <th data-label="Test Case ID">TC-A-SignIn-003</th>
             <th data-label="Test Case Description">
@@ -272,15 +275,17 @@
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
-          <!-- Fourth Raw TS-002 - Responsivity-->
+          <!-- 4 Raw TS-002 - Responsivity-->
           <tr>
             <th data-label="Test Suit ID">TS-A-002</th>
-            <th  data-label="Test Suit Description">
-              Testing and Verifying the Responsivity of The Amazone Website on Various Sizes and Platforms
+            <th data-label="Test Suit Description">
+              Testing and Verifying the Responsivity of The Amazone Website on
+              Various Sizes and Platforms
             </th>
             <th data-label="Test Case ID">TC-A-Responsivity-001</th>
             <th data-label="Test Case Description">
-              Changing the windows Sizes to verify that Amazone is Responsive on Windows Different Width Sizes
+              Changing the windows Sizes to verify that Amazone is Responsive on
+              Windows Different Width Sizes
             </th>
             <th data-label="Test Case Steps" class="testCaseStepsCell">
               <ol>
@@ -310,12 +315,18 @@
             </th>
             <th data-label="Expected Results">
               <ul>
-                <li>The Website is Responsive at all Screen Sizes on Computers</li>
+                <li>
+                  The Website is Responsive at all Screen Sizes on Computers
+                </li>
               </ul>
             </th>
             <th data-label="Real Results">
               <ul>
-                <li>Website is responsive on all windows sizes<strong>but not responsive on less than 1000px Width</strong> </li>
+                <li>
+                  Website is responsive on all windows sizes<strong
+                    >but not responsive on less than 1000px Width</strong
+                  >
+                </li>
               </ul>
             </th>
             <th data-label="Test Status">
@@ -323,15 +334,17 @@
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
-          <!-- Fifth Raw - TS-003 - Checking Currency Exchange is working -->
+          <!-- 5 Raw - TS-003 - Checking Currency Exchange is working -->
           <tr>
             <th data-label="Test Suit ID">TS-A-003</th>
-            <th  data-label="Test Suit Description">
-              Testing and Verifying that Changing currency is working on Amazone Website before loging in
+            <th data-label="Test Suit Description">
+              Testing and Verifying that Changing currency is working on Amazone
+              Website before loging in
             </th>
             <th data-label="Test Case ID">TC-A-Currency-001</th>
             <th data-label="Test Case Description">
-              Changing the Currency of Amazone E-shop without logging in and search for item and make sure currency is changed
+              Changing the Currency of Amazone E-shop without logging in and
+              search for item and make sure currency is changed
             </th>
             <th data-label="Test Case Steps" class="testCaseStepsCell">
               <ol>
@@ -340,7 +353,9 @@
                 <li>Change the Currency Settings to EURO</li>
                 <li>Save the settings</li>
                 <li>Search for an item</li>
-                <li>Make Sure item is displayed with the required currency(EURO)</li>
+                <li>
+                  Make Sure item is displayed with the required currency(EURO)
+                </li>
               </ol>
             </th>
             <th data-label="Preconditions">
@@ -365,12 +380,15 @@
             </th>
             <th data-label="Expected Results">
               <ul>
-                <li>The admired Currency (EURO) is displayed and all items are shown with it</li>
+                <li>
+                  The admired Currency (EURO) is displayed and all items are
+                  shown with it
+                </li>
               </ul>
             </th>
             <th data-label="Real Results">
               <ul>
-                <li>Items and Offers are shown with the choosen Currency </li>
+                <li>Items and Offers are shown with the choosen Currency</li>
               </ul>
             </th>
             <th data-label="Test Status">
@@ -378,11 +396,13 @@
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
-          <!-- Sixth Raw - TS-004 - Checking the functionally of adding items to basket - Guest User -->
+          <!-- 6 Raw - TS-004 - Checking the functionally of adding items to basket - Guest User -->
           <tr>
-            <th rowspan="3" data-label="Test Suit ID">TS-A-004</th>
-            <th rowspan="3" data-label="Test Suit Description">
-              Testing and Verifying that basket or the cart functionally is working in guest and user mode
+            <th rowspan="4" data-label="Test Suit ID">TS-A-004</th>
+            <th rowspan="4" data-label="Test Suit Description">
+              Testing and Verifying that basket or the cart functionally is
+              working in guest and user mode, making sure a guest is able to
+              proceed to checkout without the need for an account
             </th>
             <th data-label="Test Case ID">TC-A-Basket-001</th>
             <th data-label="Test Case Description">
@@ -394,7 +414,10 @@
                 <li>Maximize Chrom's window size</li>
                 <li>Enter specific Amazone Product</li>
                 <li>add the offer to basket</li>
-                <li>Check that basket is not Empty by the visiblity of proceed to checkout button</li>
+                <li>
+                  Check that basket is not Empty by the visiblity of proceed to
+                  checkout button
+                </li>
               </ol>
             </th>
             <th data-label="Preconditions">
@@ -410,7 +433,6 @@
                 <li>Email: None</li>
                 <li>Password: None</li>
                 <li>Search for: PS4 Gift Card</li>
-              
               </ul>
             </th>
             <th data-label="Postconditions">
@@ -426,7 +448,9 @@
             </th>
             <th data-label="Real Results">
               <ul>
-                <li>Item is successfully added to the basket by a guest user </li>
+                <li>
+                  Item is successfully added to the basket by a guest user
+                </li>
               </ul>
             </th>
             <th data-label="Test Status">
@@ -434,7 +458,7 @@
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
-          <!-- Seventh Raw - TS-004 - Checking the functionally of Deleting items to basket - Verified User  -->
+          <!-- 7 Raw - TS-004 - Checking the functionally of adding items to basket - Verified User  -->
           <tr>
             <th data-label="Test Case ID">TC-A-Basket-002</th>
             <th data-label="Test Case Description">
@@ -445,8 +469,11 @@
                 <li>Open Browser and navigate to Amazone</li>
                 <li>Maximize Chrom's window size</li>
                 <li>Sign In with a Vaild Email and Password</li>
-                <li>Add PS4 gift card to basket </li>
-                <li>Check that basket is not Empty by the visiblity of proceed to checkout button</li>
+                <li>Add PS4 gift card to basket</li>
+                <li>
+                  Check that basket is not Empty by the visiblity of proceed to
+                  checkout button
+                </li>
               </ol>
             </th>
             <th data-label="Preconditions">
@@ -477,7 +504,9 @@
             </th>
             <th data-label="Real Results">
               <ul>
-                <li>Item is successfully added to the basket by a Verified User </li>
+                <li>
+                  Item is successfully added to the basket by a Verified User
+                </li>
               </ul>
             </th>
             <th data-label="Test Status">
@@ -485,11 +514,12 @@
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
-          <!-- Eighth Raw - TS-004 - Checking the functionally of Removing items From  basket - Guest Mode -->
+          <!-- 8 Raw - TS-004 - Checking the functionally of Removing items From  basket - Guest User -->
           <tr>
             <th data-label="Test Case ID">TC-A-Basket-003</th>
             <th data-label="Test Case Description">
-              testing that Removing item from a guest user basket in a current session is working
+              testing that Removing item from a guest user basket in a current
+              session is working
             </th>
             <th data-label="Test Case Steps" class="testCaseStepsCell">
               <ol>
@@ -498,7 +528,10 @@
                 <li>Naviage to A ps4 gift card item</li>
                 <li>add the offer to basket</li>
                 <li>Remove the item from the basket</li>
-                <li>Check that basket is Empty affter adding and removing an item by checking proceed to checkout button</li>
+                <li>
+                  Check that basket is Empty affter adding and removing an item
+                  by checking proceed to checkout button
+                </li>
               </ol>
             </th>
             <th data-label="Preconditions">
@@ -514,7 +547,6 @@
                 <li>Email: None</li>
                 <li>Password: None</li>
                 <li>Search for: PS4 gift Card</li>
-                
               </ul>
             </th>
             <th data-label="Postconditions">
@@ -525,12 +557,758 @@
             </th>
             <th data-label="Expected Results">
               <ul>
-                <li>a guest user can remove an item from his basket in his current session</li>
+                <li>
+                  a guest user can remove an item from his basket in his current
+                  session
+                </li>
               </ul>
             </th>
             <th data-label="Real Results">
               <ul>
-                <li>Item is successfully removed from the basket by a guest User </li>
+                <li>
+                  Item is successfully removed from the basket by a guest User
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- 9 Raw - TS-004 - Checking the functionally of Proceed to checkout items From  basket - Guest Mode -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-BasketProceedCheckOut-004</th>
+            <th data-label="Test Case Description">
+              Verifying and testing that a guest is able to proceed to checkout
+              without the need to create an account but he should specify
+              delivery options and payment
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Naviage to A ps4 gift card item</li>
+                <li>add the offer to basket</li>
+                <li>Proceed to checkout</li>
+                <li>
+                  Checking that a guest user is able to proceed to checkout
+                  without the need for creating account
+                </li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A guest user</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: None</li>
+                <li>Password: None</li>
+                <li>Search for: PS4 gift Card</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  a guest user is able to proceed to checkout without the need
+                  for creating an account and he must enter payment info and
+                  delivery options
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  User is not able to proceed to checkout as long as he does not
+                  have an account
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- 10 Raw - TS-005 - Checking the functionally of The Search Bar - Search Bar Catg - Guest Mode -->
+          <tr>
+            <th rowspan="3" data-label="Test Suit ID">TS-A-005</th>
+            <th rowspan="3" data-label="Test Suit Description">
+              Testing and Verifying the functionally of the Search Bar
+            </th>
+            <th data-label="Test Case ID">TC-A-SearchBarCatg-001</th>
+            <th data-label="Test Case Description">
+              Verifying and testing that the search bar and it is categories is
+              working with no problem.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Choose any search category and try to search</li>
+                <li>
+                  The Required Category should shows what the user admire to see
+                </li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A guest user</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Search for: Wo</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The Search bar category should be working and showing the
+                  admired Products
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Search Results Products successfully matches the Search
+                  Bar Category
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- 11 Raw - TS-005 - Checking the functionally of The Search Bar - Search Bar Search Button Should Work - Guest Mode -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SearchBarSearchButton-002</th>
+            <th data-label="Test Case Description">
+              Verifying and testing that the search button is working and direct
+              to the result of searching
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Write a product name in search bar/li></li>
+                <li>
+                  search for the product using the search button instead of
+                  (Enter Key)
+                </li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A guest user</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Search for: Camera</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The Search bar Search Button should work and direct the user
+                  to the search results
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Search Bar is working and after clicking it forwards the
+                  user to search results
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- 12 Raw - TS-005 - Checking the functionally of The Search Bar - Searching for an Empty String - Guest Mode -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SearchBarEmpty-003</th>
+            <th data-label="Test Case Description">
+              Verifying and testing that searching for an Empty string is not
+              allowed and user should be alreted
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Write an Empty string in search bar/li></li>
+                <li>
+                  search for the Empty string using the search button instead of
+                  (Enter Key)
+                </li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A guest user</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Search for: ""</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  after searching for an Empty string the website should tell
+                  the user to Enter something or alrets him that it is Empty
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Website is just refreshed to the main page and there is no
+                  alert to the user
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  13 Raw - TS-006 - Checking the functionally of The Footer - Changing Langueg - Guest Mode -->
+          <tr>
+            <th rowspan="4" data-label="Test Suit ID">TS-A-006</th>
+            <th rowspan="4" data-label="Test Suit Description">
+              Testing the functionally of the Page's footer and the navigation
+              inside it
+            </th>
+            <th data-label="Test Case ID">TC-A-Footer-001</th>
+            <th data-label="Test Case Description">
+              Verifying the functionally of Changing the language
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Scroll Down to Footer</li>
+                <li>Click on the button of changing the language</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A guest user</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User should be able to change the language directly using
+                  drop down menu
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The User is redirected to a page to choose the preferred
+                  language and currency and also is able to choose by just
+                  hovering on Language Container
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  14 Raw - TS-006 - Checking the functionally of The Footer - Changing general amazone website to the admired country amazone website - Guest Mode -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-Footer-002</th>
+            <th data-label="Test Case Description">
+              Verifying the functionally of Changing the amazone shop to the
+              admired country domain (e.g amazone.us)
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Scroll Down to Footer</li>
+                <li>
+                  Click on the button of changing website domain or shopping
+                  region
+                </li>
+                <li>
+                  Choosing third option in the dropdown of the website country
+                  domain
+                </li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A guest user</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User should be able to change the country shopping domain
+                  by forwarding him to the proper domain
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The user is forwarded to the admired Country Domain</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  15 Raw - TS-006 - Checking the functionally of The Footer -  Back to top button should be working and scroll to top   - Guest Mode -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-Footer-003</th>
+            <th data-label="Test Case Description">
+              Verifying the functionally of Scrolling from footer back to top
+              using back to top button
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Scroll Down to Footer</li>
+                <li>Click on the button that navigate to top of page</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A guest user</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The Button (back to top) should scroll the page back up to top
+                  or header
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The page is moved up to the header when clicking on Back to
+                  top button in footer section
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  16 Raw - TS-006 - Checking the functionally of The Footer -  help link or navigation should direct user to the help section   - Guest Mode -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-Footer-004</th>
+            <th data-label="Test Case Description">
+              Verifying the functionally of The Help section and user should be
+              directed to the help section
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Scroll Down to Footer</li>
+                <li>Click on the help section</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A guest user</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The User should be directed to the help section</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The User is directed to the help section with many options
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  17 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone Mexico - Vaild info  -->
+          <tr>
+            <th rowspan="8" data-label="Test Suit ID">TS-A-007</th>
+            <th rowspan="8" data-label="Test Suit Description">
+              Verifying that sign in to different amazone domains URL
+              (Countries) with the same account should work
+            </th>
+            <th data-label="Test Case ID">TC-A-SignInDiffDomain-001</th>
+            <th data-label="Test Case Description">
+              Sign in with vaild account info to the Mexico Amazone website.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone (Mexico Domain)</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with Vaild Credintials</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A Vaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is able to sign in to the Mexico's Amazon domain
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  Succesfully sign in with the vaild account info and main page
+                  is loaded
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  18 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone Mexico - inVaild info  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignInDiffDomain-002</th>
+            <th data-label="Test Case Description">
+              Sign in with Invaild account info to the Mexico Amazone website.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone (Mexico Domain)</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with InVaild Credintials</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>InVaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: dasdasagqwega</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is unable to sign in to the Mexico Amazone website
+                  with wrong info, and he is alreted after entering wrong Email
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Website tells user (pop out message) to Enter Correct
+                  Email Address before asking him for the password
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  19 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone China - Vaild info  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignInDiffDomain-003</th>
+            <th data-label="Test Case Description">
+              Sign in with vaild account info to the China's Amazone website.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone (China Domain)</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with Vaild Credintials</li>
+                <li>Accepts Terms and Privacy of China's domain</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A Vaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is able to sign in to the China's Amazon domain with
+                  his vaild account
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Amazon China's domain showes a pop message says that
+                  <span style="color: red; font-weight: bold"
+                    >Account Does not exists !!!!!!!!!!</span
+                  >
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  20 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone China - inVaild info  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignInDiffDomain-004</th>
+            <th data-label="Test Case Description">
+              Sign in with Invaild account info to the China Amazone website.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone (China Domain)</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with InVaild Credintials</li>
+                <li>Accepts Terms and Privacy of China's domain</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>InVaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: dasdasagqwega</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is unable to sign in to the China Amazone website
+                  with wrong info, and he is alreted after entering wrong Email
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Website tells user (pop out message) to Enter Correct
+                  Email Address before asking him for the password
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  21 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone India - Vaild info  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignInDiffDomain-005</th>
+            <th data-label="Test Case Description">
+              Sign in with vaild account info to the India Amazone website.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone (India Domain)</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with Vaild Credintials</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A Vaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is able to sign in to the India's Amazon domain
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  Succesfully sign in with the vaild account info and main page
+                  is loaded
+                </li>
               </ul>
             </th>
             <th data-label="Test Status">
@@ -539,10 +1317,371 @@
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
 
+          <!--  22 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone India - inVaild info  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignInDiffDomain-006</th>
+            <th data-label="Test Case Description">
+              Sign in with Invaild account info to the India Amazone website.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone (India Domain)</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with InVaild Credintials</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>InVaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: dasdasagqwega</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is unable to sign in to the India Amazone website
+                  with wrong info, and he is alreted after entering wrong Email
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Website tells user (pop out message) to Enter Correct
+                  Email Address before asking him for the password
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
 
+          <!--  23 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone Egypt - Vaild info  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignInDiffDomain-007</th>
+            <th data-label="Test Case Description">
+              Sign in with vaild account info to the Egypt Amazone website.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone (Egypt Domain)</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with Vaild Credintials</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A Vaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is able to sign in to the Egypt's Amazon domain
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  Succesfully sign in with the vaild account info and main page
+                  is loaded
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
 
+          <!--  24 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone Egypt - inVaild info  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-SignInDiffDomain-008</th>
+            <th data-label="Test Case Description">
+              Sign in with Invaild account info to the Egypt Amazone website.
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone (Egypt Domain)</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with InVaild Credintials</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>InVaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: dasdasagqwega</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is unable to sign in to the India Amazone website
+                  with wrong info, and he is alreted after entering wrong Email
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Website tells user (pop out message) to Enter Correct
+                  Email Address before asking him for the password
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
 
-          
+          <!--  25 Raw - TS-008 - Verifying Account Name Settings - Changing the name to Al-Doori Ahmed  -->
+          <tr>
+            <th rowspan="3" data-label="Test Suit ID">TS-A-008</th>
+            <th rowspan="3" data-label="Test Suit Description">
+              Checking and Verifying the functionally of changing the name of
+              the account
+            </th>
+            <th data-label="Test Case ID">TC-A-AccountNameSet-001</th>
+            <th data-label="Test Case Description">
+              Testing that the user is able to change his name
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with Vaild Credintials</li>
+                <li>Forward to account settings</li>
+                <li>Forward to profile settings</li>
+                <li>
+                  Manual Entry of Code verfication sent to the Email or approvel
+                  of session send to Email
+                </li>
+                <li>Sleep for 60second to do the manual entry</li>
+                <li>Change the name of the account holder</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A Vaild account informations</li>
+                <li>
+                  Manual Acception sent to Mail while the automation testing is
+                  working
+                </li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+                <li>New Name: Al-Doori Ahmed</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Name is Changed</li>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The Name is successfully change to the Admired new name.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  Name is Succesfully Changed with Email sent to Mail with new
+                  detail.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  26 Raw - TS-008 - Verifying Account Name Settings - Trying to change the name to an arabic name  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-AccountNameSet-002</th>
+            <th data-label="Test Case Description">
+              Testing that the user is able to change his name to different
+              language (arabic)
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with Vaild Credintials</li>
+                <li>Forward to account settings</li>
+                <li>Forward to profile settings</li>
+                <li>
+                  Manual Entry of Code verfication sent to the Email or approvel
+                  of session send to Email
+                </li>
+                <li>Sleep for 60second to do the manual approve of email</li>
+                <li>Change the name of the account holder to arabic name</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A Vaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+                <li>New Name: احمد حامد</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Name is Changed</li>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The Name is successfully change to the Admired new name.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  Name is Succesfully Changed with Email sent to Mail with new
+                  detail.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  27 Raw - TS-008 - Verifying Account Name Settings - Trying to change the name to only numbers  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-AccountNameSet-003</th>
+            <th data-label="Test Case Description">
+              Testing that the user can not change his name to only numbers
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with Vaild Credintials</li>
+                <li>Forward to account settings</li>
+                <li>Forward to profile settings</li>
+                <li>
+                  Manual Entry of Code verfication sent to the Email or approvel
+                  of session send to Email
+                </li>
+                <li>Sleep for 60second to do the manual approve of email</li>
+                <li>Change the name of the account holder to only numbers</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A Vaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+                <li>New Name: 324212412421</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Name is Changed</li>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  There should be an Error message or pop out says name can't be
+                  numbers
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The User is able to change his name<span
+                    style="color: red; font-weight: bold"
+                  >
+                    to only Numbers (e.g] 23423123123) !!!! </span
+                  >.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
         </tbody>
       </table>
     </section>

@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* For Nav Bar */
 nav {
   font-family: "Cairo", sans-serif;
@@ -177,3 +181,34 @@ nav {
   box-shadow: 2px 3px 20px #cc9964;
 }
 
+/* Rotate Image settings */
+
+.imageSettings {
+  animation-name: rotateSettings;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotateSettings {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+ 
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+  
+}
+
+.haeding h1::first-letter {
+  color: #FF9F00;
+}
