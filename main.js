@@ -16,5 +16,12 @@ var myText =
 
 }, false);
 
+// Set Number of test cases
+var numberOfTestCases= document.querySelectorAll('[data-label="Test Case ID"]').length;
+document.getElementById('numberOfTestCases').innerHTML  = numberOfTestCases.toString();
+//Set Number of TEST SUITES
+var numberOfTestSuites = document.querySelectorAll('[data-label="Test Suit ID"]').length;
+document.getElementById('numberOfTestSuites').innerHTML  = numberOfTestSuites.toString();
+
 
 

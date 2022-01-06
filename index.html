@@ -20,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Jomhuria&family=Lobster&family=Merriweather:ital@1&family=Yanone+Kaffeesatz&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <!-- NavBar -->
@@ -66,10 +68,10 @@
     <!-- Section Type Write Effect -->
 
     <section
-      class="bg-dark text-light p-5 p-lg-0 pt-lg-2 text-center text-sm-start"
+      class="sectionTypeWriteEffect bg-dark text-light p-5 p-lg-0 pt-lg-2 text-center text-sm-start"
     >
       <!-- we need everything in container and in the middle as navbar -->
-      <div class="container">
+      <div class="container" id="aboutTheProject">
         <!-- Flex box(inside two childs image and text) 
                d-sm-flex it becomes flex only and if screen is bigger than small-->
         <div class="d-sm-flex justify-content-between">
@@ -84,16 +86,21 @@
           <img
             class="niceimg img-fluid w-50 d-none d-sm-block"
             src="Images/hello-i-m-nik-r22qS5ejODs-unsplash-removebg.png"
+            
             alt=""
           />
         </div>
       </div>
     </section>
 
-    <section class="table-container" id="aboutTheProject">
+    <section class="table-container" id="testSuites">
       <div class="haeding">
         <img src="Images/settings.png" class="imageSettings" style="display: inline-block; margin-bottom: 1.3%;" width="40px" height="40px">
       <h1 style="display:inline-block;" cl>Test Suites and Test Cases:</h1>
+    </div>
+    <div class="statsticsCases">
+      <h6>- Number of Test Suites: <span id="numberOfTestSuites" style="color: #cc9964;"></span></h6>
+      <h6>- Number of Test Cases: <span id="numberOfTestCases" style="color: #cc9964;"></span></h6>
     </div>
       <table class="table">
         <thead>
@@ -109,7 +116,9 @@
             <th>Expected Results</th>
             <th>Real Results</th>
             <th>Test Status</th>
+            <th>Test Type</th>
             <th>Author</th>
+            
           </tr>
         </thead>
 
@@ -146,7 +155,7 @@
             <th data-label="Input Data">
               <ul>
                 <li>Email: a_al_doori@utb.cz</li>
-                <li>Password: 5040302010HammodY</li>
+                <li>Password: 1020304050mojA</li>
               </ul>
             </th>
             <th data-label="Postconditions">
@@ -168,6 +177,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 2 Raw TS-001 -->
@@ -219,6 +229,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 3 Raw TS-001-->
@@ -273,6 +284,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 4 Raw TS-002 - Responsivity-->
@@ -332,6 +344,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 5 Raw - TS-003 - Checking Currency Exchange is working -->
@@ -394,6 +407,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 6 Raw - TS-004 - Checking the functionally of adding items to basket - Guest User -->
@@ -456,6 +470,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 7 Raw - TS-004 - Checking the functionally of adding items to basket - Verified User  -->
@@ -487,7 +502,7 @@
             <th data-label="Input Data">
               <ul>
                 <li>Email: a_al_doori@utb.cz</li>
-                <li>Password: 5040302010HammodY</li>
+                <li>Password: 1020304050mojA</li>
                 <li>Search for: PS4 Gift Card</li>
               </ul>
             </th>
@@ -513,6 +528,7 @@
               <button class="passButton">Pass</button>
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
+            <th>Automation Testing </th>
           </tr>
           <!-- 8 Raw - TS-004 - Checking the functionally of Removing items From  basket - Guest User -->
           <tr>
@@ -573,6 +589,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 9 Raw - TS-004 - Checking the functionally of Proceed to checkout items From  basket - Guest Mode -->
@@ -637,6 +654,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 10 Raw - TS-005 - Checking the functionally of The Search Bar - Search Bar Catg - Guest Mode -->
@@ -698,6 +716,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 11 Raw - TS-005 - Checking the functionally of The Search Bar - Search Bar Search Button Should Work - Guest Mode -->
@@ -756,6 +775,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!-- 12 Raw - TS-005 - Checking the functionally of The Search Bar - Searching for an Empty String - Guest Mode -->
@@ -814,6 +834,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  13 Raw - TS-006 - Checking the functionally of The Footer - Changing Langueg - Guest Mode -->
@@ -874,6 +895,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  14 Raw - TS-006 - Checking the functionally of The Footer - Changing general amazone website to the admired country amazone website - Guest Mode -->
@@ -933,6 +955,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  15 Raw - TS-006 - Checking the functionally of The Footer -  Back to top button should be working and scroll to top   - Guest Mode -->
@@ -988,6 +1011,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  16 Raw - TS-006 - Checking the functionally of The Footer -  help link or navigation should direct user to the help section   - Guest Mode -->
@@ -1039,6 +1063,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  17 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone Mexico - Vaild info  -->
@@ -1097,6 +1122,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  18 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone Mexico - inVaild info  -->
@@ -1150,6 +1176,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  19 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone China - Vaild info  -->
@@ -1208,6 +1235,7 @@
               <button class="passButton">Pass</button>
             </th>
             <th data-label="Author">Ahmed Al-Doori</th>
+            <th>Automation Testing </th>
           </tr>
           <!--  20 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone China - inVaild info  -->
           <tr>
@@ -1261,6 +1289,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  21 Raw - TS-007 - Verifying sign in to different amazone domain with same account should works -  Amazone India - Vaild info  -->
@@ -1314,6 +1343,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
 
@@ -1368,6 +1398,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
 
@@ -1422,6 +1453,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
 
@@ -1476,13 +1508,14 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
 
           <!--  25 Raw - TS-008 - Verifying Account Name Settings - Changing the name to Al-Doori Ahmed  -->
           <tr>
-            <th rowspan="3" data-label="Test Suit ID">TS-A-008</th>
-            <th rowspan="3" data-label="Test Suit Description">
+            <th rowspan="4" data-label="Test Suit ID">TS-A-008</th>
+            <th rowspan="4" data-label="Test Suit Description">
               Checking and Verifying the functionally of changing the name of
               the account
             </th>
@@ -1549,6 +1582,7 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  26 Raw - TS-008 - Verifying Account Name Settings - Trying to change the name to an arabic name  -->
@@ -1613,13 +1647,14 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
           <!--  27 Raw - TS-008 - Verifying Account Name Settings - Trying to change the name to only numbers  -->
           <tr>
             <th data-label="Test Case ID">TC-A-AccountNameSet-003</th>
             <th data-label="Test Case Description">
-              Testing that the user can not change his name to only numbers
+              Testing if the user is able change his name to only numbers
             </th>
             <th data-label="Test Case Steps" class="testCaseStepsCell">
               <ol>
@@ -1680,12 +1715,1800 @@
             <th data-label="Test Status">
               <button class="passButton">Pass</button>
             </th>
+            <th>Automation Testing </th>
             <th data-label="Author">Ahmed Al-Doori</th>
           </tr>
+           <!--  28 Raw - TS-008 - Verifying Account Name Settings - Trying to change the name to only Empty string  -->
+           <tr>
+            <th data-label="Test Case ID">TC-A-AccountNameSet-004</th>
+            <th data-label="Test Case Description">
+              Testing if the user is able change his name to an Empty name
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Sign in with Vaild Credintials</li>
+                <li>Forward to account settings</li>
+                <li>Forward to profile settings</li>
+                <li>
+                  Manual Entry of Code verfication sent to the Email or approvel
+                  of session send to Email
+                </li>
+                <li>Sleep for 60second to do the manual approve of email</li>
+                <li>Change the name of the account holder to an Empty String</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>A Vaild account informations</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+                <li>New Name: ""</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Name is Changed</li>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  There should be an Error message or pop out says name can't be
+                  Empty
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  User is not able to Enter empty string, the website shows an alert message asking for Entering a name
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+
+          <!--  29 Raw - TS-009 - Verfiying the left side bar (nav) - Veryfiying the humbregar icon   -->
+          <tr>
+            <th rowspan="6" data-label="Test Suit ID">TS-A-009</th>
+            <th rowspan="6" data-label="Test Suit Description">
+              Checking and Verifying the functionally of Left aside bar (nav)
+            </th>
+            <th data-label="Test Case ID">TC-A-AsideNav-001</th>
+            <th data-label="Test Case Description">
+              Testing if the humbregar button working
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Clicking on Left bar humbregar button</li>
+               
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  When Clicking on the humbregar button a menu from left side should appear
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  A left sided menu appeared as Expected.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+           <!--  30 Raw - TS-009 - Verfiying the left side bar (nav) - Veryfiying the Profile icon inside left bar   -->
+           <tr>
+            <th data-label="Test Case ID">TC-A-AsideNav-002</th>
+            <th data-label="Test Case Description">
+              Testing if the Profile icon inside left side menu redirect to account settings
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Forward to Amazon Website</li>
+                <li>Clicking on Left bar humbregar button</li>
+                <li>Clicking on the profile icon settings</li>
+                <li>Make sure account settings appears</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>Vaild Account info</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  When Clicking on the profile icon inside the left side bar the user should be directed to his account settings
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                 The Profile icon inside the left side bar direct the user to his account settings.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+
+           <!--  31 Raw - TS-009 - Verfiying the left side bar (nav) - Veryfiying the Digital Content & Devices Section   -->
+           <tr>
+            <th data-label="Test Case ID">TC-A-AsideNav-003</th>
+            <th data-label="Test Case Description">
+              Veryfiying the Digital Content & Devices Section inside the left menu
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Forward to Amazon Website</li>
+                <li>Clicking on Left bar humbregar button</li>
+                <li>Clicking on the "Digital Content & Devices Section"</li>
+                <li>Choose Free Music Category</li>
+                <li>Different page should be loaded</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is forwarded to the admired category of "Digital Content & Devices Section" and able to Enter Free Amazone Music Domain
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The User is redirected to the Amazone Music Free Website as Expected.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  32 Raw - TS-009 - Verfiying the left side bar (nav) - Veryfiying the Shop by departement section  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-AsideNav-004</th>
+            <th data-label="Test Case Description">
+              Veryfiying the Shop by departement Section inside the left menu
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Forward to Amazon Website</li>
+                <li>Clicking on Left bar humbregar button</li>
+                <li>Clicking on the "Digital Content & Devices Section"</li>
+                <li>Choose Camera&Photos</li>
+                <li>Different page should be loaded for Camera and photos products</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is forwarded to the admired category of "Shop by Dep" and able to Enter Camera and photos domain
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The User is redirected to the Camera and photo domain as Expected with offered products.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  33 Raw - TS-009 - Verfiying the left side bar (nav) - Veryfiying the Programs & Features  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-AsideNav-005</th>
+            <th data-label="Test Case Description">
+              Veryfiying the Program & Features section in the left bar menu
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Forward to Amazon Website</li>
+                <li>Clicking on Left bar humbregar button</li>
+                <li>Clicking on the "Gift Card Section" in program and feature section</li>
+                <li>Choose All gifts cards</li>
+                <li>Different page should be loaded for all types of gift cards products</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is forwarded to the admired category of gifts cards.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The User is redirected to the gift cards domain as Expected with offered products.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  34 Raw - TS-009 - Verfiying the left side bar (nav) - Veryfiying Signing out from the left menu  -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-AsideNav-006</th>
+            <th data-label="Test Case Description">
+              Veryfiying the Signout functionally from the left bar menu
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Forward to Amazon Website and SignIn</li>
+                <li>Clicking on Left bar humbregar button</li>
+                <li>Clicking on the Signout link in Help & Settings section of the left menu</li>
+                <li>Sign out</li>
+                <li>Make sure sign out was Succesful</li> 
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>logged out from current session</li>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  The User is signed out from the current session, using sign out button in the left menu aside bar
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The user is logged out from his current session and website asking for entering the email again for signing in.
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+           <!--  35 Raw - TS-010 - SignUpPageVerifcation - Veryfiying create new account with fake email and password 123456 without name   -->
+           <tr>
+            <th rowspan="5" data-label="Test Suit ID">TS-A-010</th>
+            <th rowspan="5" data-label="Test Suit Description">
+              Checking and Verifying the Sign Up page (Create account, links, fake account)
+            </th>
+            <th data-label="Test Case ID">TC-A-SignUp-001</th>
+            <th data-label="Test Case Description">
+              Testing if a user able to create account without name and with fake email and weak password
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Enter the input data for creating account</li>
+               
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>Fake Data</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email:askfaslfkd221@gmail.com</li>
+                <li>Password:123456</li>
+                <li>Name: ""</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>
+                  Website Showes a pop out message says not able to create account with Empty name
+                </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  With these input data the user is not allowed to Contineu create account, the website pop out a message telling that a name should be entered
+                </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+
+           <!--  36 Raw - TS-010 - SignUpPageVerifcation - Veryfiying create new account with fake email and password 123456 with name   -->
+           <tr>
+          
+            <th data-label="Test Case ID">TC-A-SignUp-002</th>
+            <th data-label="Test Case Description">
+              Testing if a user able to create account with name and with fake email and weak password
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Enter the input data for creating account</li>
+                <li>Sleep 60s and solve puzzle manually</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>Fake Data</li>
+                <li>Manual Entry for solving the puzzle agains autometed softwares</li>
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email:askfaslfkd221@gmail.com</li>
+                <li>Password:123456</li>
+                <li>Name: I am a tester</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The Password is too weak</li>
+                <li>
+                  A user can't create new account in system without confirmation of verifcation sent to email. 
+                </li>
+                
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>
+                  The Website asking for solving a puzzle to avoid automated fake account create
+                </li>
+                <li>After solving the puzzle manually the website asks for a verifcation code send to Email</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  37 Raw - TS-010 - SignUpPageVerifcation - Verify that condition of use navigation page should work   -->
+          <tr>
+          
+            <th data-label="Test Case ID">TC-A-SignUp-003</th>
+            <th data-label="Test Case Description">
+              Testing the Conditions of use Navigation Link in signup page 
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Click on Condition of use</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>A new page is Opened that is about Condition of use</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>New page is Opened about condition of use.</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  38 Raw - TS-010 - SignUpPageVerifcation - Verify that privacy navigation page should work   -->
+          <tr>
+          
+            <th data-label="Test Case ID">TC-A-SignUp-004</th>
+            <th data-label="Test Case Description">
+              Testing the "Privacy" Navigation Link in signup page 
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Click on "Privacy"</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>A new page is Opened that is about "Privacy"</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>New page is Opened about "Privacy".</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  39 Raw - TS-010 - SignUpPageVerifcation - Sign In from the sign up page   -->
+          <tr>
+          
+            <th data-label="Test Case ID">TC-A-SignUp-005</th>
+            <th data-label="Test Case Description">
+              Testing Sign In from the sign up page
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Click on "Sign In"</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>Vail Account Info</li>
+           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email:a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>User is able to sign in from the sign up page if he has an account</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>Sign in from Sign up page is successfully passed the test and working (user is successfully signed in with vaild info) and forwarded to amazone offers</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  40 Raw - TS-011 - ShoppingList - Create New list    -->
+          <tr>
+            <th rowspan="5" data-label="Test Suit ID">TS-A-011</th>
+            <th rowspan="5" data-label="Test Suit Description">
+              Testing and Veryfiying The Shopping List.
+            </th>
+            <th data-label="Test Case ID">TC-A-ShoppingList-001</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying of creating new shopping list in an user account
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Click on "Sign In"</li>
+                <li>Sign in with Vaild Data</li>
+                <li>Go to shopping list</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>Vaild Account Info</li>
+           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email:a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+                <li>ShoppingList Name: Healthy Snacks</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>User is able to Create new shopping list and it is added to his shopping lists </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>List with name "Healthy Snacks" is successfully created and added to the shopping List</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Automation Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!-- Starts of Manual Testings -->
+          <!--  41 Raw - TS-011 - ShoppingList - Delete a list    -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-ShoppingList-002</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying of Deleting a shopping list "Healthy Snacks"
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Click on "Sign In"</li>
+                <li>Sign in with Vaild Data</li>
+                <li>Go to shopping list</li>
+                <li>Click on "...More"</li>
+                <li>Forward down and click on "Delete List"</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>Vaild Account Info</li>
+           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email:a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+                <li>None</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>User is able to Delete a shopping list and it is removed from his list </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>List with name "Healthy Snacks" is successfully deleted after user did it</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  42 Raw - TS-011 - ShoppingList - Create new empty list name    -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-ShoppingList-003</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying of Creating a list with an Empty name
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Click on "Sign In"</li>
+                <li>Sign in with Vaild Data</li>
+                <li>Go to shopping list</li>
+                <li>Create new list with Empty name</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>Vaild Account Info</li>
+           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email: a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The Website should shows a pop out message says user should enter Shopping List name </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The Website shows a pop out message says "Please enter a name for the list."</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+           <!--  43 Raw - TS-011 - ShoppingList - Adding items to a list    -->
+           <tr>
+            <th data-label="Test Case ID">TC-A-ShoppingList-004</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying of Adding items or products to a shopping list
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Click on "Sign In"</li>
+                <li>Sign in with Vaild Data</li>
+                <li>Go to shopping list</li>
+                <li>Create new list with name "Healthy Snacks"</li>
+                <li>Adding items to the list (any products from search)</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>Vaild Account Info</li>
+           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email:a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+                <li>ShoppingList Name: Healthy Snacks</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The user is able to add new products to his shopping list with no problem </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The Product is successfully added to the shopping list "Healthy Snacks"</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  44 Raw - TS-011 - ShoppingList - Search for specifc item inside a specifc shopping list    -->
+          <tr>
+            <th data-label="Test Case ID">TC-A-ShoppingList-005</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying of Searching for an item inside a specific shopping list 
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>go to sign up page</li>
+                <li>Click on "Sign In"</li>
+                <li>Sign in with Vaild Data</li>
+                <li>Go to shopping list</li>
+                <li>Adding items to the list (any products from search)</li>
+                <li>Using search bar inside the shopping list => search for specific product and click enter</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>
+                <li>Vaild Account Info</li>
+                <li>An Exists lists with it is admired products</li>
+           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Email:a_al_doori@utb.cz</li>
+                <li>Password: 1020304050mojA</li>
+                
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The search bar shows admired search products inside the a specific list as user asked</li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The admired Products is successfully Shown as search results.</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  45 Raw - TS-012 - MobileViewResponsivity - Checking website is responsive on Iphone X    -->
+          <tr>
+            <th rowspan="5" data-label="Test Suit ID">TS-A-012</th>
+            <th rowspan="5" data-label="Test Suit Description">
+             Testing The Responsivity of the website on "Different PHONES platforms and sizes"
+            </th>
+            <th data-label="Test Case ID">TC-A-MobileViewResponsivity-001</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying Responsivity on IPHONE X
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Right click anywhere and Open Inspect Menu </li>
+                <li>Click on 'Devices ICON' close to the element section</li>
+                <li>Choose Iphone X</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Device Type: IPhone X</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The Website is fully responsive on 'IPhone X' </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The Website is completely responsive on 'IPhone X'</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+           <!--  46 Raw - TS-012 - MobileViewResponsivity - Checking website is responsive on Samsung Galaxy S5    -->
+           <tr>
+            
+            <th data-label="Test Case ID">TC-A-MobileViewResponsivity-002</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying Responsivity on Samsung Galaxy S5
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Right click anywhere and Open Inspect Menu </li>
+                <li>Click on 'Devices ICON' close to the element section</li>
+                <li>Choose Samsung Galaxy S5</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Device Type: Samsung Galaxy S5</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The Website is fully responsive on 'Samsung Galaxy S5' </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The Website is completely responsive on 'Samsung Galaxy S5'</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  47 Raw - TS-012 - MobileViewResponsivity - Checking website is responsive on Google Pixle 2 XL    -->
+          <tr>
+            
+            <th data-label="Test Case ID">TC-A-MobileViewResponsivity-003</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying Responsivity on Google Pixle 2 XL
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Right click anywhere and Open Inspect Menu </li>
+                <li>Click on 'Devices ICON' close to the element section</li>
+                <li>Choose Pixle 2 XL</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Device Type: Pixle 2 XL</li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The Website is fully responsive on 'Pixle 2 XL' </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The Website is completely responsive on 'Pixle 2 XL'</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+          <!--  48 Raw - TS-012 - MobileViewResponsivity - Checking website is responsive on iPad Pro    -->
+          <tr>
+            
+            <th data-label="Test Case ID">TC-A-MobileViewResponsivity-004</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying Responsivity on iPad Pro 
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Right click anywhere and Open Inspect Menu </li>
+                <li>Click on 'Devices ICON' close to the element section</li>
+                <li>Choose iPad Pro </li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Device Type: iPad Pro </li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The Website is fully responsive on 'iPad Pro' </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The Website is completely responsive on 'iPad Pro'</li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+           <!--  49 Raw - TS-012 - MobileViewResponsivity - Checking website is responsive at any mobile size    -->
+           <tr>
+            
+            <th data-label="Test Case ID">TC-A-MobileViewResponsivity-005</th>
+            <th data-label="Test Case Description">
+              Testing and Verifying Responsivity on any mobile window size
+            </th>
+            <th data-label="Test Case Steps" class="testCaseStepsCell">
+              <ol>
+                <li>Open Browser and navigate to Amazone Original Website</li>
+                <li>Maximize Chrom's window size</li>
+                <li>Right click anywhere and Open Inspect Menu </li>
+                <li>Click on 'Devices ICON' close to the element section</li>
+                <li>Choose "Responsive" </li>
+                <li>Change (Height & width) using the right side (sliding side)</li>
+              </ol>
+            </th>
+            <th data-label="Preconditions">
+              <ul>
+                <li>Internet Connections</li>
+                <li>Chrome Browser</li>
+                <li>Vaild Link</li>
+                <li>English System and English language</li>           
+              </ul>
+            </th>
+            <th data-label="Input Data">
+              <ul>
+                <li>Device Type: Responsive </li>
+              </ul>
+            </th>
+            <th data-label="Postconditions">
+              <ul>
+                <li>Close The Browser</li>
+              </ul>
+            </th>
+            <th data-label="Expected Results">
+              <ul>
+                <li>The Website is fully responsive on any phone screen size </li>
+              </ul>
+            </th>
+            <th data-label="Real Results">
+              <ul>
+                <li>The Website is completely responsive on any phone </li>
+              </ul>
+            </th>
+            <th data-label="Test Status">
+              <button class="passButton">Pass</button>
+            </th>
+            <th>Manual Testing </th>
+            <th data-label="Author">Ahmed Al-Doori</th>
+          </tr>
+         <!--  50 Raw - TS-013 - HomePage - Checking the imamge slider buttons    -->
+         <tr>
+          <th rowspan="4" data-label="Test Suit ID">TS-A-013</th>
+          <th rowspan="4" data-label="Test Suit Description">
+           Testing The Home Page Components
+          </th>
+          <th data-label="Test Case ID">TC-A-HomePage-001</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying the image Slider (right and left to change Images)
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Maximize Chrom's window size</li>
+              <li>Click on Left image slider button </li>
+              <li>Click on Right image slider button</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>           
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>None</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>The Image sliders button working fine and should change the images (sections)</li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The Buttons on images slider changing the image (section)</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+        <!--  51 Raw - TS-013 - HomePage - Checking the imamge slider (clicking on image)    -->
+        <tr>
+        
+          <th data-label="Test Case ID">TC-A-HomePage-002</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying the image Slider (Clicking on the shown image)
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Maximize Chrom's window size</li>
+              <li>Click on the image shown in the image slider</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>           
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>None</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>Clicking on image shown should redirect the user to what the image explain</li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The Image direct the user to a page of what it is says</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+        <!--  52 Raw - TS-013 - HomePage - Checking the different categories on the home   -->
+        <tr>
+        
+          <th data-label="Test Case ID">TC-A-HomePage-003</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying the different categories on the home page offers
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Maximize Chrom's window size</li>
+              <li>Click on the different categories offers in the homepage</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>           
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>None</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>Clicking on any category offere should direct the speicif offers of the required category</li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>Clicking on Home Page Categories forward user to the page showes the products about admired categories</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+        <!--  53 Raw - TS-013 - HomePage - Checking The Navigation to browse history button   -->
+        <tr>
+        
+          <th data-label="Test Case ID">TC-A-HomePage-003</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying the different categories on the home page offers
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Maximize Chrom's window size</li>
+              <li>Click on the different categories offers in the homepage</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>
+              <li>Sign in to the Amazon website with vaild account</li> 
+              <li>do some search for products</li>      
+              <li>Scroll Down in the homepage and click on "View or edit your browsing history"</li>
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>Email: a_al_doori@utb.cz</li>
+              <li>Password: 1020304050mojA</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>Clicking on "View or edit your browsing history" should redirect the user to the history of search page</li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>Clicking on"View or edit your browsing history" directed the user to the history of searches page</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+        <!--  54 Raw - TS-014 - HomePage - Checking Forget Password Functionality    -->
+        <tr>
+          <th rowspan="4" data-label="Test Suit ID">TS-A-014</th>
+          <th rowspan="4" data-label="Test Suit Description">
+           Testing The "Forgot Password Functionality" and Page.
+          </th>
+          <th data-label="Test Case ID">TC-A-ForgotPass-001</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying Empty field entry when forgetting password
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Click on sign in button</li>
+              <li>Click on Need Help? </li>
+              <li>Click on Forgot Password</li>
+              <li>Enter an Empty Email Field and click Contineu</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>           
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>Email: ""</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>The Website should ask the user to Enter his Email (Pop out error message)</li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The Website Pop out a message asking to Enter Email or phone Number.</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+        <!--  55 Raw - TS-014 - HomePage - Checking Forget Password Functionality    -->
+        <tr>
+
+          <th data-label="Test Case ID">TC-A-ForgotPass-002</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying forgetting password using Fake Email Address
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Click on sign in button</li>
+              <li>Click on Need Help? </li>
+              <li>Click on Forgot Password</li>
+              <li>Enter a Fake Email address</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>           
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>Email: "hitest@ahmed.net"</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>The Website should ask the user to verfiy a confirmation message from his Email </li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The Website Pop out a message says "We're sorry. We weren't able to identify you given the information provided."</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+
+         <!--  56 Raw - TS-014 - HomePage - Checking Forget Password Functionality    -->
+         <tr>
+
+          <th data-label="Test Case ID">TC-A-ForgotPass-003</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying forgetting a password using  a vaild Email Address
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Click on sign in button</li>
+              <li>Click on Need Help? </li>
+              <li>Click on Forgot Password</li>
+              <li>Enter a vaild Email Address</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>    
+              <li>Valid Account Info</li>       
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>Email: "a_al_doori@utb.cz"</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>The Website should ask the user to verfiy a confirmation message from his Email and an Email should sent to the valid Email </li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The Website Sent a verifcation Email Contains OTP code and ask user to enter it</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+        <!--  57 Raw - TS-014 - HomePage - Checking Forget Password Functionality    -->
+        <tr>
+
+          <th data-label="Test Case ID">TC-A-ForgotPass-004</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying Clicking on "you may contact Customer Service "
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Click on sign in button</li>
+              <li>Click on Need Help? </li>
+              <li>Click on Forgot Password</li>
+              <li>Click on "you may contact Customer Service"</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>        
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>None</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>The Website should redirect user to the Customer Service Page </li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The Website directed the user to the customer page for the seek of help</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+         <!--  58 Raw - TS-015- OrderPage - Checking the order page    -->
+         <tr>
+          <th rowspan="6" data-label="Test Suit ID">TS-A-015</th>
+          <th rowspan="6" data-label="Test Suit Description">
+           Testing The Order Page and SubLink.
+          </th>
+          <th data-label="Test Case ID">TC-A-OrderPage-001</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying Navigating to orders page
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Click on sign in button</li>
+              <li>Sign in with Vaild Info</li>
+              <li>Click on "Returns and Orders" in the second Nav Bar</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>
+              <li>Valid Account Info</li>           
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>Email: "a_al_doori@utb.cz</li>
+              <li>Password: 1020304050mojA</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>The User should be navigated to the orders and returns page</li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The Website Redirect the user to the Order and Return page</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+         <!--  59 Raw - TS-015- OrderPage - Checking the order page    -->
+         <tr>
+          
+          <th data-label="Test Case ID">TC-A-OrderPage-002</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying 'Buy again' subpage in order page
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Click on sign in button</li>
+              <li>Sign in with Vaild Info</li>
+              <li>Click on "Returns and Orders" in the second Nav Bar</li>
+              <li>Click on 'Buy again'</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>
+              <li>Valid Account Info</li>           
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>Email: "a_al_doori@utb.cz</li>
+              <li>Password: 1020304050mojA</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>The section should be changed to the 'Buy again' section</li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The section changed to the 'Buy again' section</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+         <!--  60 Raw - TS-015- OrderPage - Checking the order page    -->
+         <tr>
+          
+          <th data-label="Test Case ID">TC-A-OrderPage-003</th>
+          <th data-label="Test Case Description">
+            Testing and Verifying 'Not Yet Shipped' subpage in order page
+          </th>
+          <th data-label="Test Case Steps" class="testCaseStepsCell">
+            <ol>
+              <li>Open Browser and navigate to Amazone Original Website</li>
+              <li>Click on sign in button</li>
+              <li>Sign in with Vaild Info</li>
+              <li>Click on "Returns and Orders" in the second Nav Bar</li>
+              <li>Click on 'Not Yet Shipped'</li>
+            </ol>
+          </th>
+          <th data-label="Preconditions">
+            <ul>
+              <li>Internet Connections</li>
+              <li>Chrome Browser</li>
+              <li>Vaild Link</li>
+              <li>English System and English language</li>
+              <li>Valid Account Info</li>           
+            </ul>
+          </th>
+          <th data-label="Input Data">
+            <ul>
+              <li>Email: "a_al_doori@utb.cz</li>
+              <li>Password: 1020304050mojA</li>
+            </ul>
+          </th>
+          <th data-label="Postconditions">
+            <ul>
+              <li>Close The Browser</li>
+            </ul>
+          </th>
+          <th data-label="Expected Results">
+            <ul>
+              <li>The section should be changed to the 'Not Yet Shipped' section</li>
+            </ul>
+          </th>
+          <th data-label="Real Results">
+            <ul>
+              <li>The section changed to the 'Not Yet Shipped' section</li>
+            </ul>
+          </th>
+          <th data-label="Test Status">
+            <button class="passButton">Pass</button>
+          </th>
+          <th>Manual Testing </th>
+          <th data-label="Author">Ahmed Al-Doori</th>
+        </tr>
+
         </tbody>
       </table>
     </section>
     <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <h3 style="color: #cc9964;">Al-Doori</h3>
+        <p>Thanks to my Teacher, Dr Petr Žáček for this amazing course and amazing explanation.</p>
+      
+      <ul class="socials">
+        <li><a href="https://www.facebook.com/ahmad7am1d/" target="_blank"><i class="fa fa-facebook"></i></li>
+        <li><a href="https://www.instagram.com/ahmad7am1d/" target="_blank"><i class="fa fa-instagram"></i></li>
+        <li><a href="https://github.com/ahmed7am1d" target="_blank"><i class="fa fa-github"></i></li>
+      </ul>
+    </div>
+     
+    </footer>
 
     <script src="main.js"></script>
   </body>
