@@ -96,15 +96,45 @@ nav ul li a:hover {
     
 }
 /* Number of test cases and test suites */
+
 .statsticsCases {
+  display: grid;
     font-weight: bold;
+    grid-template-columns: 40% 40%;
+    
+    grid-template: "testSuites  testCases";
+    justify-content: space-around;
+    margin-bottom: 30px;
+   
+}
+.testSuites {
+  display: flex;
+  grid-area: testSuites;
+  background-color: red;  
+  height: 400px;
+  width: 500px;
+  justify-content: center;
+  padding: 10px;
 }
 
-.statsticsCases h6::first-letter {
+.testCases {
+  display: flex;
+  grid-area: testCases;
+  background-color: red;
+  height: 400px;
+  width: 500px;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+
+
+/* .statsticsCases h6::first-letter {
   color: #ff9900;
   font-weight: bold;
   font-size: 25px;
-}
+} */
 
 
 .table-container {
